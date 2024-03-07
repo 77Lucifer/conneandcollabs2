@@ -1,0 +1,140 @@
+.Contact-page{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(25deg,#5AE4A8 30%, #242323 50%);;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* .visme_d{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+} */
+.contact{
+    margin-top: 50px;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-inner{
+    display: flex;
+    width: 60%;
+    height: 66%;
+    /* background-image: url(/src/components/images/contact-img2.png); */
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #000;
+    justify-content: space-between;
+}
+.Contact-page h1{
+    font-size: 2.3rem;
+    position: absolute;
+    top: 19%;
+    color: white;
+}
+
+.Contact-page h1 span{
+    color: #ff00bf;
+}
+
+.contact-l{
+    width: 49%;
+    height: 75%;
+    padding-left: 5px;
+}
+
+.contact-l img{
+    width: 117%;
+    height: 130%;
+    object-fit: contain;
+    /* background-image: url(/src/components/images/C  ); */
+}
+.contact-r{
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.contact form input{
+    outline: none;
+    border: none;
+    background-color: whitesmoke;
+    /* color: white; */
+    width: 90%;
+    margin-top: 10px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.contact form textarea{
+    font-size: 16px;
+    margin-top: 10px;
+    color: black;
+    width: 90%;
+    border-radius: 30px;
+    background-color: whitesmoke;
+    padding: 20px;
+    outline: none;
+}
+.contact form a{
+    text-align: center;
+    width: 50%;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 997px) {
+    .contact{
+        height: 85vh;
+    }
+    .contact-inner{
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 95%;
+        height: 90%;
+    }
+    .contact-l{
+        width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    }
+    .contact-l img{
+        width: 105%;
+    }
+    .contact-r{
+        width: 80%;
+        height: 70%;
+    }
+    .contact-r form textarea{
+        width: 100%;
+        padding: 30px;
+    }
+}
+@media screen and (max-width: 887px) {
+    .contact-r{
+        width: 100%;
+    }
+    .contact form input{
+        width: 100%;
+    }
+    .Contact-page h1{
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+  color: white;
+  font-family: var(--primary-font-famliy);
+}
+
+@font-face {
+  font-family: 'regular-gillroy';
+  src: url(font/Gilroy-Regular.ttf);
+}
+
+:root {
+  --primary-text-color: #ff00bf;
+  --primary-font-famliy: 'regular-gillroy';
+}

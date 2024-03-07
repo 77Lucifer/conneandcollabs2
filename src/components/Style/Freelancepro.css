@@ -1,0 +1,161 @@
+.f-profile-main{
+    width: 100%;
+    height: 100%;
+    /* background-color: aliceblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 30px;
+}
+.f-user-detail{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.f-user-container{
+    width: 60%;
+    height: 100%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.f-top-img{
+    width: 100%;
+    height: fit-content;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 5px;
+    font-size: 1.3rem;
+}
+.f-top-img img{
+    width: 180px;
+    border: 2px solid palevioletred;
+    border-radius: 50%;
+    height: 180px;
+    padding: 6px;
+    object-fit: fill;
+}
+.f-name-profession{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.f-soical-id{
+    /* background-color: antiquewhite; */
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+.f-social-a{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 1.4rem;
+}
+.f-work{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.f-work{
+    display: flex;
+}
+.f-work span{
+    text-align: center;
+}
+
+.f-cv{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 15px;
+    /* gap: 50px; */
+}
+.f-e-c{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    font-size: 1.5rem;
+}
+.f-e-c span{
+    padding: 7px 14px;
+    border-radius: 5px;
+    background-color: gray;
+}
+
+.f-e-c span:hover{
+    background-color: rgb(85, 84, 84);
+    cursor: pointer;
+}
+
+.f-prj-skl{
+    width: 100%;
+    padding: 15px;
+}
+.f-project-skil-btns {
+    display: flex;
+    width: 55%;
+    color: black;
+    background-color: #ced1d2;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .f-project-skil-btns h4 {
+    padding: 20px 50px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  /* .f-project-skil-btns h4:nth-child(1) {
+    background-color: #FAFDFF;
+  } */
+  
+  .f-project-skil-btns h4.active {
+    background-color: #FAFDFF;
+  }
+  
+  .f-project-skil-btns h4:hover {
+    background-color: #FAFDFF;
+    transition: ease 0.5s all;
+  }
+  
+.f-projects-s{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+.f-projects-l{
+    width: 45%;
+    height: 160px;
+    background-color: #E9EBEC;
+    border-radius: 15px;
+}
+.f-projects-r{
+    width: 45%;
+    border-radius: 15px;
+    background-color: #E9EBEC;
+    height: 160px;
+}
