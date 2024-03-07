@@ -3,14 +3,13 @@ import Nav from './Nav'
 import './Style/Login.css'
 import img6 from './images/img6.avif'
 import { ToastContainer, toast } from 'react-toastify';
-import Freelancer from './Freelancer';
 import 'react-toastify/dist/ReactToastify.css';
-// import { getAuth, signInWithEmailAndPassword } from "firebase/auth"
-// import { app } from "../firebase"
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth"
+import { app } from "../firebase-config"
 import { Link } from 'react-router-dom';
 
 
-// const auth = getAuth(app);
+const auth = getAuth(app);
 const Login = () => {
 
     const [email, setEmail] = useState("");

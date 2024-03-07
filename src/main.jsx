@@ -14,6 +14,7 @@ import PrivacyPolicy from './components/PrivacyPolicy.jsx';
 import TermsConditions from './components/TermsConditions.jsx';
 import ReturnRefund from './components/ReturnRefund.jsx';
 import './index.css'
+import FreelancerProfile from './components/FreelancerProfile.jsx';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,11 @@ const router = createBrowserRouter([
     path: '/Freelancer',
     element: <Freelancer />,
   },
+  {
+    path: '/Freelancer/:id',
+    element: <FreelancerProfile />,
+  },
+
   {
     path: '/Contact',
     element: <Contact />,
@@ -56,6 +62,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/Freelancer" element={<Freelancer />} />
+          <Route path="/Freelancer/:username" component={FreelancerProfile} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Signup" element={<Signup />} />
           <Route path="/Login" element={<Login />} />

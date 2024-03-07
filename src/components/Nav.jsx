@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-// import { signOut } from 'firebase/auth';
+import { signOut } from 'firebase/auth';
 import { toast, ToastContainer } from 'react-toastify';
-// import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import logo from './images/logo.png';
 import './Style/Nav.css';
 
@@ -33,36 +33,36 @@ const Nav = () => {
     };
 
     const [isSignedUp, setIsSignedUp] = useState(false);
-    // const auth = getAuth();
+    const auth = getAuth();
     const navigate = useNavigate();
 
     const [user, setUser] = useState(null);
 
-    // useEffect(() => {
-    //     const unsubscribe = onAuthStateChanged(auth, (user) => {
-    //         if (user) {
-    //             setUser(user);
-    //             setIsSignedUp(true);
-    //         } else {
-    //             setUser(null);
-    //             setIsSignedUp(false);
-    //         }
-    //     });
-    //     return () => unsubscribe();
-    // }, [auth]);
+    useEffect(() => {
+        const unsubscribe = onAuthStateChanged(auth, (user) => {
+            if (user) {
+                setUser(user);
+                setIsSignedUp(true);
+            } else {
+                setUser(null);
+                setIsSignedUp(false);
+            }
+        });
+        return () => unsubscribe();
+    }, [auth]);
 
-    // const handleLogout = () => {
-    //     // const auth = getAuth();
-    //     signOut(auth)
-    //         .then(() => {
-    //             setUser(null);
-    //             setIsSignedUp(false);
-    //             navigate.push('/'); // Redirect to home page after logout
-    //         })
-    //         .catch((error) => {
-    //             console.error(error);
-    //         });
-    // };
+    const handleLogout = () => {
+        // const auth = getAuth();
+        signOut(auth)
+            .then(() => {
+                setUser(null);
+                setIsSignedUp(false);
+                navigate.push('/'); // Redirect to home page after logout
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+    };
 
     const [clickedServiceLink, setClickedServiceLink] = useState(false);
     const [clickedAboutUsLink, setClickedAboutUsLink] = useState(false);

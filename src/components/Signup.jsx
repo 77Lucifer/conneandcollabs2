@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-// import { createUserWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword } from "firebase/auth";
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Nav from './Nav';
 import img6 from './images/img6.avif';
-// import { getAuth } from "firebase/auth";
-// import { app } from "../firebase";
+import { getAuth } from "firebase/auth";
+import { app } from "../firebase-config";
 
-// const auth = getAuth(app);
+const auth = getAuth(app);
 
 const Signup = () => {
   const [email, setEmail] = useState('');

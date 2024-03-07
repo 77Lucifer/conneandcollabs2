@@ -18,6 +18,7 @@ import Freelancer from './components/Freelancer';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsConditions from './components/TermsConditions';
 import ReturnRefund from './components/ReturnRefund';
+import FreelancerProfile from './components/FreelancerProfile';
 
 const App = () => {
   useEffect(() => {
@@ -47,6 +48,8 @@ const App = () => {
 
       <Routes>
         <Route path="/Freelancer" element={<Freelancer />} />
+        <Route path="/Freelancer/:username" element={<FreelancerProfile />} />
+
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Signup" element={<Signup />} />
         <Route path="/Login" element={<Login />} />
