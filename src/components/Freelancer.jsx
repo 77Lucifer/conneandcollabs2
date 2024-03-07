@@ -212,6 +212,7 @@ const Freelancer = () => {
               <Link to={`/Freelancer/${item.id}`} key={index}>
                 <div className="user-card">
                   <div className="img">
+                    {/* code */}
                     <img
                       src={item.imageUrl}
                       alt="Uploaded Profile"
