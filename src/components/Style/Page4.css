@@ -94,7 +94,11 @@
 }
 #p-hover{
     position: relative;
+}.project a {
+    position: relative; /* Set position relative for z-index */
+    z-index: 1; /* Ensure the link is above the pseudo-element */
 }
+
 #p-hover::before {
     content: attr(data-category); /* Use the data-category attribute of the project */
     display: flex;
@@ -113,14 +117,15 @@
     background-color: #000000ba;
     border-radius: 10px;
     transition: 0.6s all ease;
+    pointer-events: none; /* Allow clicks to pass through */
 }
 
-
-#p-hover:hover:before {
+#p-hover:hover::before {
     transform: translateY(-50px);
     height: 130%;
 }
-#p-hover:hover .project h4{
+
+#p-hover:hover .project h4 {
     display: none;
 }
 
@@ -133,36 +138,33 @@
 }
 
 #p-hover[data-title="A Leading Brick Manufacturing Company"]::before {
-    content: "Brick Manufacturing Website"; 
+    content: "Brick Manufacturing Website";
 }
 
 #p-hover[data-title="Naveen Photographer"]::before {
-    content: "Naveen Photographer Website"; 
+    content: "Naveen Photographer Website";
 }
 #p-hover[data-title="Abhinav Singh"]::before {
-    content: "Business Website"; 
+    content: "Business Website";
 }
 #p-hover[data-title="Dhivish Dasari"]::before {
-    content: "Portfolio Website"; 
+    content: "Portfolio Website";
 }
 #p-hover[data-title="Kriya The Creators App"]::before {
-    content: "Business Website"; 
+    content: "Business Website";
 }
 
-
-.project img{
+.project img {
     width: 100%;
     height: 160px;
     object-fit: cover;
 }
 
-
-.project h4{
+.project h4 {
     margin-top: 15px;
     text-align: center;
     font-size: 21px;
 }
-
 @media screen and (max-width: 887px){
     .page4-row1,.page4-row2{
         flex-direction: column;
