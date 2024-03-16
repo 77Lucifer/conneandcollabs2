@@ -6,28 +6,73 @@
 .page-4 h1{
     text-align: center;
 }
-
+.categerios{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px 10px;
+}
+.categerios span{
+    padding: 10px 15px;
+    background-color: #252525;
+    /* font-size: 17px; */
+    height: fit-content;
+    color: rgb(255, 127, 113);
+}
+.categerios span:hover{
+    border: 0.2px solid salmon;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
 .page4-inner{
     width: 100%;
     height: 100%;
-    margin-top: 30px;
+    margin-top: 50px;
     display: flex;
-    flex-direction: column;
-    gap: 30px;
-    /* padding: 30px; */
+    align-items: center;
+    justify-content: center;
+}
+/* 
+.page4-row1,
+.page4-row2 {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; } */
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: traanslateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
-.page4-row1{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+@keyframes slideOutToLeft {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
 }
-.page4-row2{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+
+.fade-in {
+    animation: slideInFromLeft 0.5s ease forwards;
 }
-.project{
+
+.fade-out {
+    animation: slideOutToLeft 0.5s ease forwards;
+}
+
+
+.project {
     width: 300px;
     height: 350px;
     border: 2px solid salmon;
@@ -35,13 +80,76 @@
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    transition: ease-out 0.3s all;
-    /* justify-content: space-evenly; */
+    margin-bottom: 20px; /* Add space between projects */
 }
 
-.project:hover{
-    transform: scale(1.1);
+.page4-row1 {
+    width: 85%;
+    /* background-color: aliceblue; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    justify-content: flex-start;
 }
+#p-hover{
+    position: relative;
+}
+#p-hover::before {
+    content: attr(data-category); /* Use the data-category attribute of the project */
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    color: white;
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    bottom: -30%;
+    background-color: #000000ba;
+    border-radius: 10px;
+    transition: 0.6s all ease;
+}
+
+
+#p-hover:hover:before {
+    transform: translateY(-50px);
+    height: 130%;
+}
+#p-hover:hover .project h4{
+    display: none;
+}
+
+/* Specific styling for different projects */
+#p-hover[data-title="aesthetics cafe"]::before {
+    content: "Business Website"; /* Change content for aesthetics cafe */
+}
+#p-hover[data-title="SG Projects is a leading construction company"]::before {
+    content: "Construction Company Website"; /* Change content for SG Projects */
+}
+
+#p-hover[data-title="A Leading Brick Manufacturing Company"]::before {
+    content: "Brick Manufacturing Website"; 
+}
+
+#p-hover[data-title="Naveen Photographer"]::before {
+    content: "Naveen Photographer Website"; 
+}
+#p-hover[data-title="Abhinav Singh"]::before {
+    content: "Business Website"; 
+}
+#p-hover[data-title="Dhivish Dasari"]::before {
+    content: "Portfolio Website"; 
+}
+#p-hover[data-title="Kriya The Creators App"]::before {
+    content: "Business Website"; 
+}
+
+
 .project img{
     width: 100%;
     height: 160px;

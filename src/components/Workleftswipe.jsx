@@ -23,22 +23,33 @@ const Workleftswipe = () => {
   return (
     <>
         <div class="work-left-swipe">
-            <h2>Our <span>Work.</span></h2>
-            <h2>Our <span>Work.</span></h2>
-            <h2>Our <span>Work.</span></h2>
-            <h2>Our <span>Work.</span></h2>
-            <h2>Our <span>Work.</span></h2>
-            <h2>Our <span>Work.</span></h2>
-            <h2>Our <span>Work.</span></h2>
-            <h2>Our <span>Work.</span></h2>
-            <h2>Our <span>Work.</span></h2>
-            <h2>Our <span>Work.</span></h2>
-            <h2>Our <span>Work.</span></h2>
-            <h2>Our <span>Work.</span></h2>
-            <h2>Our <span>Work.</span></h2>
-            <h2>Our <span>Work.</span></h2>
-            <h2>Our <span>Work.</span></h2>
-            <h2>Our <span>Work.</span></h2>
+            <h2>Our <span>Work</span></h2>
+            <h2>Our <span>Work</span></h2>
+            <h2>Our <span>Work</span></h2>
+            <h2>Our <span>Work</span></h2>
+            <h2>Our <span>Work</span></h2>
+            <h2>Our <span>Work</span></h2>
+            <h2>Our <span>Work</span></h2>
+            <h2>Our <span>Work</span></h2>
+            <h2>Our <span>Work</span></h2>
+            <h2>Our <span>Work</span></h2>
+            <h2>Our <span>Work</span></h2>
+            <h2>Our <span>Work</span></h2>
+            <h2>Our <span>Work</span></h2>
+            <h2>Our <span>Work</span></h2>
+            <h2>Our <span>Work</span></h2>
+            <h2>Our <span>Work</span></h2>
+            <h2>Our <span>Work</span></h2>
+            <h2>Our <span>Work</span></h2>
+            <h2>Our <span>Work</span></h2>
+            <h2>Our <span>Work</span></h2>
+            <h2>Our <span>Work</span></h2>
+            <h2>Our <span>Work</span></h2>
+            <h2>Our <span>Work</span></h2>
+            <h2>Our <span>Work</span></h2>
+            <h2>Our <span>Work</span></h2>
+            <h2>Our <span>Work</span></h2>
+            <h2>Our <span>Work</span></h2>
         </div>
 
     </>

@@ -1,15 +1,18 @@
 .Freelance-page {
     width: 100%;
-    height: 100%;
+    height: fit-content;  /* Change this to min-height */
+    /* min-height: 150vh;   */
     margin-top: 60px;
     background: url(/src/components/images/hero-bg-dark.png);
     background-size: cover;
     background-repeat: repeat;
     color: whitesmoke;
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
 }
+
 
 .Freelance-top{
     margin: 30px;
@@ -71,25 +74,47 @@
     background: none;
 }
 
-.profile-form{
+.profile-form {
     width: 60%;
-    height: 80vh;
+    height: fit-content;  /* Change this to 100% */
     background-color: black;
-    /* top: 30%; */
     border-radius: 30px;
     position: absolute;
     overflow: hidden;
-    top: 25%;
+    top: 6%;
     display: flex;
 }
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    height: fit-content;
+    width: 40%;
+    margin-top: 30px;
+  }
+  
+  .custom-file-upload span {
+    margin-right: 5px;
+  }
+  
+  .custom-file-upload:hover {
+    background-color: #45a049;
+  }
+  
 
-.profile-inner{
+.profile-inner {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     height: 100%;
 }
-
 .select-img{
     display: flex;
     overflow: hidden;
@@ -113,12 +138,10 @@
     font-size: 27px;
 }
 
-
-
 .p-left{
     padding: 20px;
-    width: 40%;
-    height: 100%;
+    width: 100%;
+    height: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -128,9 +151,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70%;
-    height: 40%;
-    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
     flex-direction: column;
     gap: 20px;
     border: #FFFFFF 2px solid;
@@ -145,32 +168,41 @@
 }
 .p-left input{
     width: 40%;
+    overflow: hidden;
 }
 .p-right{
-    width: 60%;
+    width: 100%;
+    padding: 20px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
 }
-.p-right .form{
+.p-right .form {
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    padding: 30px;
+    padding: 20px;
     gap: 30px;
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-.p-right .form input{
-    width: 100%;
-    padding: 12px 20px;
+
+.p-right .form input {
+    padding: 10px;
     border: none;
+    width: 40%;
     font-size: 17px;
     background-color: transparent;
     outline: none;
+    margin: 20px 15px; /* Adjust the margin as needed */
     color: #E96AA8;
     border-bottom: 2px solid whitesmoke;
+    box-sizing: border-box; /* Include padding and border in the width calculation */
 }
-.p-right .form button{ 
-    max-width: 75%;
+
+.p-right button{ 
+    width: 100%;
+    margin: 0px auto;
 }
 
 

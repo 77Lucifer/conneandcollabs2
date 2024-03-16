@@ -12,7 +12,7 @@ const Contact = () => {
     Message: '',
   });
 
-  const [isFormVisible, setIsFormVisible] = useState(false);
+  const [isFormVisible, setIsFormVisible] = useState(true); // Set to true by default
 
   let name, value;
   const postuserdata = (e) => {
@@ -76,16 +76,12 @@ const Contact = () => {
     }
   };
 
-  const loadVismeForm = () => {
-    const script = document.createElement('script');
-    script.src = 'https://static-bundles.visme.co/forms/vismeforms-embed.js';
-    script.async = true;
-    document.body.appendChild(script);
-  };
-
   useEffect(() => {
     if (isFormVisible) {
-      loadVismeForm();
+      const script = document.createElement('script');
+      script.src = 'https://static-bundles.visme.co/forms/vismeforms-embed.js';
+      script.async = true;
+      document.body.appendChild(script);
     } else {
       // Cleanup script on hiding the form
       const existingScript = document.querySelector(
@@ -101,25 +97,8 @@ const Contact = () => {
     <>
       <Nav />
       <div className="Contact-page">
-        <button
-          className="n-button"
-          onClick={() => {
-            setIsFormVisible(true);
-            loadVismeForm();
-          }}
-        >
-          <span>Show Form</span>
-        </button>
         {isFormVisible && (
-          <div
-            className="visme_d"
-            data-title="Website Contact Form"
-            data-url="mxgpr6md-website-contact-form?fullPage=true"
-            data-domain="forms"
-            data-full-page="true"
-            data-min-height="100vh"
-            data-form-id="17821"
-          ></div>
+          <div class="visme_d" data-title="Contact Form" data-url="z4rg7qyx-contact-form?fullPage=true" data-domain="forms" data-full-page="true" data-min-height="100vh" data-form-id="36978"></div>
         )}
       </div>
     </>
