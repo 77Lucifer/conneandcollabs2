@@ -1,6 +1,6 @@
 .f-profile-main {
     width: 100%;
-    height: 110vh;
+    height: 97vh;
     /* background-color: whitesmoke; */
     overflow: hidden;
     /* background-image: url(../images/li1.png); */
@@ -16,7 +16,9 @@
     background-color: whitesmoke;
     color: black;
   }
-  
+  .f-profile-main.day-mode .block {
+    background-image: url(../images/Fl-pb.png);
+  }
   .f-profile-main.night-mode {
     background-image: url(../images/li1.png); 
     color: white;
@@ -246,12 +248,12 @@
 }
 
 .el5-img {
-    bottom: -23%;
+    bottom: -30%;
     left: 60%;
 }
 
 .el6-img {
-    bottom: -23%;
+    bottom: -30%;
     right: 60%;
 }
 

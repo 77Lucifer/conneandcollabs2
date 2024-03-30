@@ -3,7 +3,7 @@
     height: fit-content;  /* Change this to min-height */
     /* min-height: 150vh;   */
     margin-top: 60px;
-    background: url(/src/components/images/hero-bg-dark.png);
+    background: url(/src/components/images/freelancerback.jpeg);
     background-size: cover;
     background-repeat: repeat;
     color: whitesmoke;
@@ -29,8 +29,73 @@
     font-weight: 800;
 }
 
-.Freelance-top h1 span {
+/* .Freelance-top h1 span {
     color: #ff00bf;
+    
+} */
+
+
+.Freelance-top h1 span{
+  font-size: 2.5rem;
+  line-height: calc(20px + 20vh);
+/*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+    0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+  color: #fccaff; */
+  text-shadow: 0 0 5px #ff00bf, 0 0 15px #ff00bf, 0 0 20px #ff00bf, 0 0 40px #ff00bf, 0 0 60px #ff0000, 0 0 10px #ff00bf, 0 0 98px #ff0000;
+    color: #AF40FF;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 12s infinite;
+  -webkit-animation: blink 12s infinite;
+}
+
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 0 0 5px #ff00bf, 0 0 15px #ff00bf, 0 0 20px #ff00bf, 0 0 40px #ff00bf, 0 0 60px #ff0000, 0 0 10px #ff00bf, 0 0 98px #ff0000;
+    color: #AF40FF;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+/*     color: #fccaff;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+  text-shadow: 0 0 5px #ff00bf, 0 0 15px #ff00bf, 0 0 20px #ff00bf, 0 0 40px #ff00bf, 0 0 60px #ff0000, 0 0 10px #ff00bf, 0 0 98px #ff0000;
+    color: #eae8e8;
+  }
 }
 
 .profile-btn {
@@ -222,24 +287,25 @@
 }
 
 .user-card{
-    width: 310px;
-    height: 300px;
+    width: 270px;
+    height: 330px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    border: 2px solid #AF40FF;
+    border: 3px solid #ff00bf;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 15%;
     transition: all ease 0.4s;
 }
 .user-card:hover{
     transform: scale(0.9);
 }
 .user-card .img{
-    width: 40%;
-    height: 40%;
+    width: 45%;
+    height: 35%;
     border-radius: 50%;
+    margin-top: 10px;
     background-color: black;
     overflow: hidden;
 }
@@ -252,12 +318,14 @@
 .user-card p{
     width: 100%;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .let-talk-btn{
     font-size: 20px;
     max-width:fit-content;
     min-width: 10px;
+    margin-bottom: 20px;
 }
 
 .nxt-page{
