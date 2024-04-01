@@ -92,6 +92,7 @@ const FreelancerProfile = () => {
         {loading ? (
           <p>Loading... </p>
         ) : (
+        // detail
           <div className="f-user-detail">
             <div className="f-user-container">
               <div className="f-top-img">
