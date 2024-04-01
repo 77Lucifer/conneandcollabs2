@@ -368,10 +368,16 @@
     .profile-form{
         width: 80%;
     }
-    .Freelance-top h1{
-        font-size: 1.8rem;
-    }
     .profile-btn{
         max-width: fit-content;
+    }
+    .Freelance-top{
+        height: fit-content;
+    }
+    .Freelance-top h1 span{
+        font-size: 2.5rem;
+        height: 10px;
+        margin-bottom: 30px;
+        white-space: nowrap;
     }
 }
