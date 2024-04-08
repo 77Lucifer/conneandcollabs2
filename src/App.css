@@ -4,7 +4,12 @@
   padding: 2rem;
   text-align: center;
 }
-
+.temp-div{
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: red;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -40,3 +45,5 @@
 .read-the-docs {
   color: #888;
 }
+
+
